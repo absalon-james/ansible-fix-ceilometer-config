@@ -1,0 +1,6 @@
+ceilometer_reserved_metadata_namespace: ""
+ceilometer_service_names:
+  - "ceilometer-api"
+  - "ceilometer-collector"
+  - "ceilometer-agent-notification"
+  - "ceilometer-polling"

@@ -1,0 +1,6 @@
+- name: Restart ceilometer services
+  service:
+    name: "{{ item }}"
+    state: "restarted"
+    pattern: "{{ item }}"
+  with_items: ceilometer_service_names

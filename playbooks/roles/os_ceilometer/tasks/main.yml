@@ -1,0 +1,7 @@
+- name: Added reserved metadata namespace
+  lineinfile:
+    dest: /etc/ceilometer/ceilometer.conf
+    line: "reserved_metadata_namespace = \"{{ ceilometer_reserved_metadata_namespace }}\""
+    state: present
+    insertafter: '^\[DEFAULT\]$'
+  notify: Restart ceilometer services

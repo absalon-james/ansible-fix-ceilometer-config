@@ -1,0 +1,5 @@
+- name: Fixed ceilometer.conf
+  hosts: ceilometer_all
+  user: root
+  roles:
+   - role: "os_ceilometer"
